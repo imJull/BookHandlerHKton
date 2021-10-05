@@ -1,0 +1,47 @@
+{
+  "books": [{
+    "id": 1,
+    "title": "OmanGatDamn!",
+    "author": "Dexter",
+    "year": 2015,
+    "genero": "Rapping",
+    "lenguage":"Ingles",
+    "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
+    "image": "o",
+    "extended": false
+},
+{
+    "id": 2,
+    "title": "OmanGatDamn2!",
+    "author": "Dexter",
+    "year": 2016,
+    "genero": "Rapping",
+    "lenguage": "Ingles",
+    "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
+    "image": "O",
+    "extended": false
+},
+{
+    "id": 3,
+    "title": "OmanGatDamn3!",
+    "author": "Dexter",
+    "year": 2017,
+    "genero": "Rapping",
+    "lenguage": "Ingles",
+    "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
+    "image": "O",
+    "extended": false
+},
+{
+    "id": 4,
+    "title": "OmanGatDam3!",
+    "author": "Dexter",
+    "year": 2018,
+    "genero": "Rapping",
+    "lenguage": "Ingles",
+    "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
+    "image": "O",
+    "extended": false
+}
+]
+}

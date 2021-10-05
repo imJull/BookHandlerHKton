@@ -36,36 +36,53 @@ const AddBook = ( { addBook } ) => {
           <h3>Agregar Nuevo Libro</h3>
           <form onSubmit={submit}>
             <div>
-                <input
+               <input
                     type="text" 
                     placeholder="Titlulo" 
                     value={btitle}
-                    onChange={(e) => setBtitle(e.target.value)} />
+                    onChange={(e) => setBtitle(e.target.value)} /> 
+            </div>
+            
+            <div>                
                 <input
                     type="text"  
                     placeholder="Autor" 
                     value={bautor}
                     onChange={(e) => setBautor(e.target.value)} />
+            </div>
+
+            <div>
                 <input
                     type="number"  
                     placeholder="Año" 
                     value={byear}
                     onChange={(e) => setByear(e.target.value)} />
+            </div>
+
+            <div>
                 <input 
                     type="text" 
                     placeholder="Género" 
                     value={bgenre}
                     onChange={(e) => setBgenre(e.target.value)} />
+            </div>
+
+            <div>
                 <input
                     type="text"  
                     placeholder="Lenguaje" 
                     value={blenguaje}
                     onChange={(e) => setLenguage(e.target.value)} />
+            </div>
+
+            <div>
                 <input
                     type="text"  
                     placeholder="Descripción" 
                     value={bdescription}
                     onChange={(e) => setBdescription(e.target.value)} />
+            </div>
+            <div>
                 <input
                     type="text"  
                     placeholder="Link Foto" 
@@ -73,7 +90,7 @@ const AddBook = ( { addBook } ) => {
                     onChange={(e) => setBpicture(e.target.value)} />
                 
             </div>
-            <button type="submit">Guardar Libro</button>
+            <input value="Guardar Libro" type="submit" />
           </form>
         </div>
     )
