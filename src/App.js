@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import { useState, useEffect } from 'react';
 import Books from './components/Books';
 import AddBook from './components/header/AddBook';
+import { Container } from '@material-ui/core'
 
 
 
@@ -52,11 +53,13 @@ const deleteBook = async (id) => {
 
   
   return (
-    <div className="App">
-     <Header onHide={() => sethideAddBook(!hideAddBook)}/>
-     {!hideAddBook && <AddBook addBook={addBook}/>}
-     {books.length > 0 ? <Books books={books} onDelete={deleteBook}/>
-      : "No hay Libros por mostrar"}
+    <div className="App-main">
+      <Container>
+      <Header onHide={() => sethideAddBook(!hideAddBook)}/>
+      {!hideAddBook && <AddBook addBook={addBook}/>}
+      {books.length > 0 ? <Books books={books} onDelete={deleteBook}/>
+        : "No hay Libros por mostrar"}
+      </Container>
     </div>
   );
 }

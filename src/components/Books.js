@@ -3,7 +3,7 @@ import Book from './Book'
 
 const Books = ( { books, onDelete } ) => {
     return (
-        <div>
+        <div className="books-container">
            {
                books.map((book) => <Book key={book.id} book={book} onDelete={onDelete}/>)
            }

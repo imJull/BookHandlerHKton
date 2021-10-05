@@ -44,14 +44,24 @@
       "id": 5
     },
     {
-      "title": "sfs",
-      "author": "AFFA",
-      "year": "1341",
-      "genre": "faf",
-      "lenguaje": "fafaf",
-      "description": "fafa",
-      "image": "https://i.pinimg.com/564x/d2/97/a3/d297a3eced48990f8001c8624ec84145.jpg",
+      "title": "El marmata",
+      "author": "Jull",
+      "year": "2021",
+      "genre": "afa",
+      "lenguaje": "afff",
+      "description": "sfsf",
+      "image": "adadada",
       "id": 6
+    },
+    {
+      "title": "El Libro Rcih",
+      "author": "Rich Jay",
+      "year": "2021",
+      "genre": "Comedia",
+      "lenguaje": "Espaniol",
+      "description": "Basado en hechos Reales",
+      "image": "https://runt-of-the-web.com/wordpress/wp-content/uploads/2017/03/toe.png",
+      "id": 7
     }
   ]
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { TextField, Box } from '@material-ui/core'
+import { TextField, Box, Button as Buton, Container } from '@material-ui/core'
+import * as React from 'react';
 
 
 const AddBook = ( { addBook } ) => {
@@ -34,16 +35,22 @@ const AddBook = ( { addBook } ) => {
    
 
     return (
-        <div>
+        <div className="addbook-container">
           <h3>Agregar Nuevo Libro</h3>
-          <Box onSubmit={submit}>
+          <Box className="addbook-box"
+            component="form"
+            sx={{
+              '& .MuiTextField-root': { m: 4, width: '30ch' },
+            }}
+            noValidate
+            autoComplete="off"          
+            onSubmit={submit}>
             <div>
                <TextField
                     required
                     id="outlined-required"
                     label="Título"
                     type="text" 
-                    placeholder="Titlulo" 
                     value={title}
                     onChange={(e) => setTitle(e.target.value)} /> 
             </div>
@@ -61,16 +68,20 @@ const AddBook = ( { addBook } ) => {
             <div>
                 <TextField
                     required
-                    id="outlined-required"
+                    id="outlined-number"
                     label="Año"
-                    type="number"  
-                    placeholder="Año" 
+                    type="number"
+                    InputLabelProps={{
+                    shrink: true,
+          }} 
                     value={year}
                     onChange={(e) => setYear(e.target.value)} />
             </div>
 
             <div>
-                <input 
+                <TextField                    
+                    id="outlined-search"
+                    label="Genero" 
                     type="text" 
                     placeholder="Género" 
                     value={genre}
@@ -78,7 +89,9 @@ const AddBook = ( { addBook } ) => {
             </div>
 
             <div>
-                <input
+                <TextField
+                    id="outlined-search"
+                    label="Lenguaje"                 
                     type="text"  
                     placeholder="Lenguaje" 
                     value={lenguaje}
@@ -86,21 +99,27 @@ const AddBook = ( { addBook } ) => {
             </div>
 
             <div>
-                <input
+                <TextField
+                    fullWidth
+                    id="standart-helper-text"
+                    label="Descripción"
                     type="text"  
                     placeholder="Descripción" 
                     value={description}
                     onChange={(e) => setDescription(e.target.value)} />
             </div>
             <div>
-                <input
+                <TextField
+                    fullWidth
                     type="text"  
                     placeholder="Link Foto" 
                     value={image}
                     onChange={(e) => setImage(e.target.value)} />
                 
             </div>
-            <input value="Guardar Libro" type="submit" />
+            <di>
+                <Buton className="box-button" variant="contained"type="submit">Guardar Libro</Buton>
+            </di>
           </Box>
         </div>
     )

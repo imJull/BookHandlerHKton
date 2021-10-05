@@ -1,15 +1,20 @@
 import Button from "./Button"
+import { Typography, Box, Button as Buton } from '@material-ui/core'
 
 const Header = ( {onHide} ) => {
 
     return (
-        <div>
-          <h1>J2T Libro</h1>
-          <h4>Su desición</h4>
+        <section className="header">
+
+           <div className="header-text">
+                <Typography variant="h2">J2T Libro</Typography>
+                <Typography variant="h5">Su desición</Typography>
+           </div>
+          
           <div>
-              <Button color="green" onHide={onHide}/>
+              <Button onHide={onHide}/>
           </div>
-        </div>
+        </section>
     )
 }
 
