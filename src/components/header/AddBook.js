@@ -1,31 +1,31 @@
 import { useState } from "react";
 
 const AddBook = ( { addBook } ) => {
-    const [btitle, setBtitle] = useState("");
-    const [bautor, setBautor] = useState("");
-    const [byear, setByear] = useState("");
-    const [bgenre, setBgenre] = useState("");
-    const [blenguaje, setLenguage] = useState("");
-    const [bdescription, setBdescription] = useState("");
-    const [bpicture, setBpicture] = useState("");
+    const [title, setTitle] = useState("");
+    const [author, setAuthor] = useState("");
+    const [year, setYear] = useState("");
+    const [genre, setGenre] = useState("");
+    const [lenguaje, setLenguage] = useState("");
+    const [description, setDescription] = useState("");
+    const [image, setImage] = useState("");
 
     const submit = (e) => {
         e.preventDefault();
         
-        if(!btitle || !bautor || !byear || !bdescription){
+        if(!title || !author || !year || !description){
             alert("La descripción, Autor, Título y Año, son obiatorios")
             return
         }
 
-        addBook({ btitle, bautor, byear, bgenre, blenguaje, bdescription, bpicture})
+        addBook({ title, author, year, genre, lenguaje, description, image})
 
-        setBtitle("")
-        setBautor("")
-        setByear("")
-        setBgenre("")
+        setTitle("")
+        setAuthor("")
+        setYear("")
+        setGenre("")
         setLenguage("")
-        setBdescription("")
-        setBpicture("")
+        setDescription("")
+        setImage("")
 
 
     }
@@ -39,39 +39,39 @@ const AddBook = ( { addBook } ) => {
                <input
                     type="text" 
                     placeholder="Titlulo" 
-                    value={btitle}
-                    onChange={(e) => setBtitle(e.target.value)} /> 
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)} /> 
             </div>
             
             <div>                
                 <input
                     type="text"  
                     placeholder="Autor" 
-                    value={bautor}
-                    onChange={(e) => setBautor(e.target.value)} />
+                    value={author}
+                    onChange={(e) => setAuthor(e.target.value)} />
             </div>
 
             <div>
                 <input
                     type="number"  
                     placeholder="Año" 
-                    value={byear}
-                    onChange={(e) => setByear(e.target.value)} />
+                    value={year}
+                    onChange={(e) => setYear(e.target.value)} />
             </div>
 
             <div>
                 <input 
                     type="text" 
                     placeholder="Género" 
-                    value={bgenre}
-                    onChange={(e) => setBgenre(e.target.value)} />
+                    value={genre}
+                    onChange={(e) => setGenre(e.target.value)} />
             </div>
 
             <div>
                 <input
                     type="text"  
                     placeholder="Lenguaje" 
-                    value={blenguaje}
+                    value={lenguaje}
                     onChange={(e) => setLenguage(e.target.value)} />
             </div>
 
@@ -79,15 +79,15 @@ const AddBook = ( { addBook } ) => {
                 <input
                     type="text"  
                     placeholder="Descripción" 
-                    value={bdescription}
-                    onChange={(e) => setBdescription(e.target.value)} />
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)} />
             </div>
             <div>
                 <input
                     type="text"  
                     placeholder="Link Foto" 
-                    value={bpicture}
-                    onChange={(e) => setBpicture(e.target.value)} />
+                    value={image}
+                    onChange={(e) => setImage(e.target.value)} />
                 
             </div>
             <input value="Guardar Libro" type="submit" />

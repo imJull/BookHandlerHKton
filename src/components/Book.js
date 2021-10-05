@@ -4,7 +4,7 @@ const DetailBook = ( {book, onDelete}) => {
     return (
         <div>
             <div key={book.id}>
-                <img src={book.image} alt={book.image} />
+                <img src={book.image} alt="no" />
                 <div>
                    <h4>{book.title} 
                     <FaRegTrashAlt onClick={() => onDelete(book.id)}/> </h4>

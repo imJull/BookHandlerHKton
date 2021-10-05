@@ -1,4 +1,3 @@
-import AddBook from "./AddBook"
 import Button from "./Button"
 
 const Header = ( {onHide} ) => {

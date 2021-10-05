@@ -1,47 +1,57 @@
 {
-  "books": [{
-    "id": 1,
-    "title": "OmanGatDamn!",
-    "author": "Dexter",
-    "year": 2015,
-    "genero": "Rapping",
-    "lenguage":"Ingles",
-    "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
-    "image": "o",
-    "extended": false
-},
-{
-    "id": 2,
-    "title": "OmanGatDamn2!",
-    "author": "Dexter",
-    "year": 2016,
-    "genero": "Rapping",
-    "lenguage": "Ingles",
-    "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
-    "image": "O",
-    "extended": false
-},
-{
-    "id": 3,
-    "title": "OmanGatDamn3!",
-    "author": "Dexter",
-    "year": 2017,
-    "genero": "Rapping",
-    "lenguage": "Ingles",
-    "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
-    "image": "O",
-    "extended": false
-},
-{
-    "id": 4,
-    "title": "OmanGatDam3!",
-    "author": "Dexter",
-    "year": 2018,
-    "genero": "Rapping",
-    "lenguage": "Ingles",
-    "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
-    "image": "O",
-    "extended": false
-}
-]
+  "books": [
+    {
+      "id": 2,
+      "title": "OmanGatDamn2!",
+      "author": "Dexter",
+      "year": 2016,
+      "genero": "Rapping",
+      "lenguage": "Ingles",
+      "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
+      "image": "O",
+      "extended": false
+    },
+    {
+      "id": 3,
+      "title": "OmanGatDamn3!",
+      "author": "Dexter",
+      "year": 2017,
+      "genero": "Rapping",
+      "lenguage": "Ingles",
+      "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
+      "image": "O",
+      "extended": false
+    },
+    {
+      "id": 4,
+      "title": "OmanGatDam3!",
+      "author": "Dexter",
+      "year": 2018,
+      "genero": "Rapping",
+      "lenguage": "Ingles",
+      "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
+      "image": "O",
+      "extended": false
+    },
+    {
+      "title": "sfs",
+      "autor": "sf",
+      "year": "245",
+      "genre": "sfs",
+      "lenguaje": "sff",
+      "description": "fsf",
+      "picture": "https://i.pinimg.com/564x/d2/97/a3/d297a3eced48990f8001c8624ec84145.jpg",
+      "id": 5
+    },
+    {
+      "title": "sfs",
+      "author": "AFFA",
+      "year": "1341",
+      "genre": "faf",
+      "lenguaje": "fafaf",
+      "description": "fafa",
+      "image": "https://i.pinimg.com/564x/d2/97/a3/d297a3eced48990f8001c8624ec84145.jpg",
+      "id": 6
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/header/Header';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Books from './components/Books';
 import AddBook from './components/header/AddBook';
 
@@ -8,25 +8,46 @@ import AddBook from './components/header/AddBook';
 
 function App() {
   const [hideAddBook, sethideAddBook] = useState(true);
-  const [books, setBooks] = useState([
-)
+  const [books, setBooks] = useState([])
+
+  //Jalar los datos
+  useEffect(() => {
+    const getBooks = async () => {
+      const booksServer = await fetchBooks()
+      setBooks(booksServer);
+    }
+    getBooks();
+}, [])
+
+const fetchBooks = async () => {
+  const res = await fetch('http://localhost:5000/books')
+  const data = await res.json()
+  console.log(data)
+  return data
+}
+
 
 //Eliminar
-const deleteBook = (id) => {
+const deleteBook = async (id) => {
+  await fetch(`http://localhost:5000/books/${id}`, {
+    method: 'DELETE'
+  })
   setBooks(books.filter(book => book.id !== id))
 }
 
+
 //Añadir
-const addBook = (book) => {
-
-  /* const id = Math.floor(Math.random() * 1000) +1
-  console.log(id)
-
-  const newBook = {id, ...book}
-  setBooks([...books, newBook]) */
-
-  
-
+  const addBook = async (book) => {
+    const res = await fetch(`http://localhost:5000/books`, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(book),
+    })
+    const data = await res.json()
+    setBooks([...books, data])
+    console.log(book)
 }
 
   
