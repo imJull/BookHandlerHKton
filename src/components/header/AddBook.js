@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { TextField, Box } from '@material-ui/core'
+
 
 const AddBook = ( { addBook } ) => {
     const [title, setTitle] = useState("");
@@ -34,9 +36,12 @@ const AddBook = ( { addBook } ) => {
     return (
         <div>
           <h3>Agregar Nuevo Libro</h3>
-          <form onSubmit={submit}>
+          <Box onSubmit={submit}>
             <div>
-               <input
+               <TextField
+                    required
+                    id="outlined-required"
+                    label="Título"
                     type="text" 
                     placeholder="Titlulo" 
                     value={title}
@@ -44,15 +49,20 @@ const AddBook = ( { addBook } ) => {
             </div>
             
             <div>                
-                <input
+                <TextField
+                    required
+                    id="outlined-required"
+                    label="Autor"
                     type="text"  
-                    placeholder="Autor" 
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)} />
             </div>
 
             <div>
-                <input
+                <TextField
+                    required
+                    id="outlined-required"
+                    label="Año"
                     type="number"  
                     placeholder="Año" 
                     value={year}
@@ -91,7 +101,7 @@ const AddBook = ( { addBook } ) => {
                 
             </div>
             <input value="Guardar Libro" type="submit" />
-          </form>
+          </Box>
         </div>
     )
 }
