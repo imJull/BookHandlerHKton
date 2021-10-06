@@ -5,7 +5,7 @@ const DetailBook = ( {book, onDelete}) => {
     return (
         <section>
             <div className="book-container">
-                <ListItem key={book.id}>
+                <ListItem className="book-item" key={book.id}>
                     <ListItemAvatar>
                         <Avatar src={book.image} sx={{ width:50, height:50}} alt="noImage"/>
                     </ListItemAvatar>
