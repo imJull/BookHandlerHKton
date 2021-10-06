@@ -8,7 +8,7 @@ const Header = ( {onHide} ) => {
 
            <div className="header-text">
                 <Typography variant="h2">J2T Libro</Typography>
-                <Typography variant="h5">Su desición</Typography>
+                <Typography variant="h5">Su aja</Typography>
            </div>
           
           <div>
