@@ -62,6 +62,16 @@
       "description": "Basado en hechos Reales",
       "image": "https://runt-of-the-web.com/wordpress/wp-content/uploads/2017/03/toe.png",
       "id": 7
+    },
+    {
+      "title": "Las Aventuras de John",
+      "author": "John Mark Tucker",
+      "year": "2021",
+      "genre": "Comedia",
+      "lenguaje": "Español",
+      "description": "Cuentos o histrias para la escuela sabatica",
+      "image": "https://www.bioenciclopedia.com/wp-content/uploads/2013/10/aguila-calva4-800.jpg",
+      "id": 8
     }
   ]
 }

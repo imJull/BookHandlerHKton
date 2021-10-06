@@ -23,7 +23,6 @@
 }
 
 
-
 .addbook-container{
     max-width: 90%;
     display: flex;
@@ -32,11 +31,15 @@
     flex-direction: column;
     margin: 5rem;
     padding: 0.8rem;
-    border: 0.1rem solid red;
+    border: 0.1rem solid lightblue;
     border-radius: 0.5rem;
-    box-shadow: 1px 2px 5px 5px rgba(255,255,255,0.5) ;
-
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.5);
+    transition: all 400ms ease-in-out;
 }
+.addbook-container:hover{
+    box-shadow: 2px 5px 8px 1px rgba(57, 102, 138, 0.7);
+}
+
 .addbook-container h3{
     font-weight: 700;
     border-bottom: 2px solid lightblue;
@@ -67,10 +70,10 @@
 /* Book */
 
 .book-container{
-    border: 0.2rem solid blue;
+   
     border-radius: 0.4rem;
-    margin: 1rem;
-    padding: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.2rem;
 }
 
 .book-minicard{
@@ -89,4 +92,16 @@
     width: 60%;
     line-height: 0;
     border: 1px solid rgb(165, 165, 61);
+}
+.book-trash{
+    position: absolute;
+}
+.fa-trash{
+    position: relative;
+    bottom: 3rem;
+    right: 0;
+    left: 15rem;
+    font-size: 1.5rem;
+    color: lightcoral;
+
 }
