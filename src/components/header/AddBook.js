@@ -37,10 +37,10 @@ const AddBook = ( { addBook } ) => {
     return (
         <div className="addbook-container">
           <h3>Agregar Nuevo Libro</h3>
-          <Box className="addbook-box"
+          <Box width="sm" className="addbook-box"
             component="form"
             sx={{
-              '& .MuiTextField-root': { m: 4, width: '30ch' },
+              '& .MuiTextField-root': { m: 3, width: '25ch' },
             }}
             noValidate
             autoComplete="off"          
