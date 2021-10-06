@@ -1,28 +1,6 @@
 {
   "books": [
     {
-      "id": 3,
-      "title": "OmanGatDamn3!",
-      "author": "Dexter",
-      "year": 2017,
-      "genero": "Rapping",
-      "lenguage": "Ingles",
-      "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
-      "image": "O",
-      "extended": false
-    },
-    {
-      "id": 4,
-      "title": "OmanGatDam3!",
-      "author": "Dexter",
-      "year": 2018,
-      "genero": "Rapping",
-      "lenguage": "Ingles",
-      "descripcion": "Lorem impsuin dapsdad asdaskdadasda ñasdadñlasdad",
-      "image": "O",
-      "extended": false
-    },
-    {
       "title": "El marmata",
       "author": "Jull",
       "year": "2021",

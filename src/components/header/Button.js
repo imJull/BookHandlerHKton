@@ -12,6 +12,9 @@ const Button = ({ color, onHide }) => {
         toggleBTN()
         onHide()
     }
+    const mensaje =  {
+        agr: "Agregar Libro",
+        quit: "Volver"}
 
     return (
         <div>
@@ -19,7 +22,7 @@ const Button = ({ color, onHide }) => {
                 variant="contained"
                 color={btn ? "primary" : "secondary"}
                 onClick={clickHandler} 
-                style={{backgroundColor:color}}>{btn ? "Agregar Libro" : "Volver"}</Buton>
+                style={{backgroundColor:color}}>{btn ? mensaje.agr : mensaje.quit }</Buton>
         </div>
     )
 }

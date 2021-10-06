@@ -1,11 +1,17 @@
+import BookHighLight from './BookHighLight';
 import { FaRegTrashAlt } from 'react-icons/fa';
 import { Avatar, ListItem, Divider, ListItemAvatar, ListItemText } from '@material-ui/core'
 
-const DetailBook = ( {book, onDelete}) => {
+const Book = ( {book, onDelete}) => {
+
+    const clickDetail = (id) =>{
+        
+    }
+
     return (
-        <section>
+        <section className="book-section">
             <div className="book-container">
-                <ListItem className="book-item" key={book.id}>
+                <ListItem onClick={(e) => console.log(e)}className="book-item" key={book.id}>
                     <ListItemAvatar>
                         <Avatar src={book.image} sx={{ width:50, height:50}} alt="noImage"/>
                     </ListItemAvatar>
@@ -24,13 +30,13 @@ const DetailBook = ( {book, onDelete}) => {
                 <Divider variant="inset"/>
                 
             </div>
-            <div book-container-detail>
-
+            <div className= "book-container-detail">
+            <BookHighLight book={book} />
 
             </div>
         </section>
     )
 }
 
-export default DetailBook
+export default Book
 

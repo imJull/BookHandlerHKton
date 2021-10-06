@@ -21,7 +21,7 @@ function App() {
 }, [])
 
 const fetchBooks = async () => {
-  const res = await fetch('http://localhost:5000/books')
+  const res = await fetch('http://localhost:5000/books') //{ method: 'GET', mode: 'no-cors', headers: {'Content-type': 'application/json'} })
   const data = await res.json()
   console.log(data)
   return data
@@ -31,7 +31,7 @@ const fetchBooks = async () => {
 //Eliminar
 const deleteBook = async (id) => {
   await fetch(`http://localhost:5000/books/${id}`, {
-    method: 'DELETE'
+    method: 'DELETE',
   })
   setBooks(books.filter(book => book.id !== id))
 }
