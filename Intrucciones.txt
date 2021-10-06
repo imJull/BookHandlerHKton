@@ -1,0 +1,11 @@
+Instalar
+Ejecutar npm i para cargar todos los archivos del package.json
+Dependencias material UI
+JSONSERVER PARA PROBAR
+
+para sacar datos fetch: sustituir las ip que se encuentran en el App.js con la dirección del api necesaria.
+
+Se pasa el link del repositorio de github porque el archivo es muy pesado si fuera en winrar
+
+El branch del repositorio es LinicioFetch
+https://github.com/imJull/BookHandlerHKton/tree/LinicioFetch

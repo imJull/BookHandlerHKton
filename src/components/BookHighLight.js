@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mater
 
 const BookHighLight = ({book}) => {
     return (
-        <Card sx={{ maxWidth: 900, width: 450, height:600 }}>
+        <Card sx={{ maxWidth: 900, width: 450, maxHeight:800 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"

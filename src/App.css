@@ -65,7 +65,8 @@
 /* Books */
 .book-section{
     display: grid;
-    grid-template-columns: repeat(2, 5fr);
+    grid-template-columns: repeat(2, 10fr);
+    margin: 1.5rem;
 }
 
 .books-container{
@@ -77,13 +78,13 @@
 /* Book */
 
 .book-container{
-    width:30%;
+    width:70%;
     border-radius: 0.4rem;
     margin: 0.5rem;
     padding: 0.2rem;
 }
 .book-container-detail{
-    width: 65%;
+    width: 50%;
 }
 
 .book-minicard{
