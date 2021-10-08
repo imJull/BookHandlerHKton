@@ -1,5 +1,5 @@
 import Button from "./Button"
-import { Typography, Box, Button as Buton } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 
 const Header = ( {onHide} ) => {
 
