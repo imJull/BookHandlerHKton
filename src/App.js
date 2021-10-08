@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Books from './components/Books';
 import AddBook from './components/header/AddBook';
 import { Container } from '@material-ui/core'
+import axios from 'axios';
 
 
 
@@ -25,6 +26,15 @@ const fetchBooks = async () => {
   const data = await res.json()
   console.log(data)
   return data
+}
+
+const fetchBooks2 = () => {
+    axios.get("http://localhost:5000/books")
+    .then(res =>{
+      setBooks(res.data)
+    }).catch(err =>{
+      console.log("Error")
+    })
 }
 
 
