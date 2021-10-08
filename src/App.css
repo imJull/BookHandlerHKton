@@ -63,20 +63,29 @@
 }
 
 /* Books */
+.book-section{
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    margin: 1.5rem;
+}
+
 .books-container{
     /* border: 1px solid purple; */
-    width:40%;
-    border-right: 1px solid rgba(0,0,0,0.2);
-    padding-right: 1rem;
+    width:100%;
 }
+
 
 /* Book */
 
 .book-container{
-   
+    width:70%;
     border-radius: 0.4rem;
     margin: 0.5rem;
     padding: 0.2rem;
+    cursor: pointer;
+}
+.book-container-detail{
+    width: 50%;
 }
 
 .book-minicard{
@@ -102,8 +111,8 @@
     max-width: 25rem;
 }
 .book-item:hover{
-    background-color: skyblue;
-    box-shadow: 1px 2px 4px 1px skyblue;
+    background-color: rgba(135, 207, 235, 0.281);
+    
     
 
 }

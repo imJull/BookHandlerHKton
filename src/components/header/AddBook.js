@@ -117,9 +117,9 @@ const AddBook = ( { addBook } ) => {
                     onChange={(e) => setImage(e.target.value)} />
                 
             </div>
-            <di>
+            <div>
                 <Buton className="box-button" variant="contained"type="submit">Guardar Libro</Buton>
-            </di>
+            </div>
           </Box>
         </div>
     )

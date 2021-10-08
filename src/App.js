@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Books from './components/Books';
 import AddBook from './components/header/AddBook';
 import { Container } from '@material-ui/core'
+import axios from 'axios';
 
 
 
@@ -21,17 +22,26 @@ function App() {
 }, [])
 
 const fetchBooks = async () => {
-  const res = await fetch('http://localhost:5000/books')
+  const res = await fetch('http://localhost:5000/books') //{ method: 'GET', mode: 'no-cors', headers: {'Content-type': 'application/json'} })
   const data = await res.json()
   console.log(data)
   return data
+}
+
+const fetchBooks2 = () => {
+    axios.get("http://localhost:5000/books")
+    .then(res =>{
+      setBooks(res.data)
+    }).catch(err =>{
+      console.log("Error")
+    })
 }
 
 
 //Eliminar
 const deleteBook = async (id) => {
   await fetch(`http://localhost:5000/books/${id}`, {
-    method: 'DELETE'
+    method: 'DELETE',
   })
   setBooks(books.filter(book => book.id !== id))
 }
