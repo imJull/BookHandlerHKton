@@ -1,7 +1,9 @@
 Instalar
-Ejecutar npm i para cargar todos los archivos del package.json
-Dependencias material UI
-JSONSERVER PARA PROBAR
+1. Ejecutar npm i para cargar todos los archivos del package.json
+    Dependencias materialUI  @material-ui/core
+    JSONSERVER PARA PROBAR  npm i json-server  En el archivo json crear un script =>  "server": "json-server --watch db.json --port 5000" luego => npm run server
+    Cors npm i Cors
+    axios npm i axios
 
 para sacar datos fetch: sustituir las ip que se encuentran en el App.js con la dirección del api necesaria.
 
